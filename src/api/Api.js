@@ -19,7 +19,6 @@ export const fetchImg = async (queryFetch, pageFetch) => {
 
     }
   };
-
   const { data } = await axios.get(BASE_URL, response)
   return data;
 }
