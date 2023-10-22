@@ -13,7 +13,7 @@ export const App = () =>  {
 
 const [query, setQuery] = useState('');
 const [images, setImages] = useState([]);
-const [error, setError] = useState(false);
+// const [error, setError] = useState(false);
 const [loading, setLoading] = useState(false);
 const [page, setPage] = useState(1);
 const [totalImges, setTotalImges] = useState(0);
@@ -37,7 +37,7 @@ useEffect(() => {
 
     setImages(prevImages => [...prevImages, ...normalizedImg], // Додаємо нові зображення до існуючих
     setLoading(false), // Прибираємо індикатор завантаження зображень
-    setError(''), // Очищаємо повідомлення про помилку
+    // setError(''), // Очищаємо повідомлення про помилку
     setTotalImges(Math.ceil(data.totalHits / 12)), //Вираховуємо  загальну кількість сторінок
     );
   } catch (error) {
